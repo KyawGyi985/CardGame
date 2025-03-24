@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>လက်သီး လက်ဝါး ကတ်ကြေး (Player vs Player)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>လက်သီး လက်ဝါး ကတ်ကြေး</h1>
+        <div class="score">
+            <p>ကစားသမား ၁: <span id="player1-score">0</span></p>
+            <p>ကစားသမား ၂: <span id="player2-score">0</span></p>
+        </div>
+        <div class="turn">
+            <p>လက်ရှိ ကစားသမား: <span id="current-player">ကစားသမား ၁</span></p>
+        </div>
+        <div class="choices">
+            <div class="card" id="rock">
+                <img src="rock.png" alt="လက်သီး">
+                <p>လက်သီး</p>
+            </div>
+            <div class="card" id="paper">
+                <img src="paper.png" alt="လက်ဝါး">
+                <p>လက်ဝါး</p>
+            </div>
+            <div class="card" id="scissors">
+                <img src="scissors.png" alt="ကတ်ကြေး">
+                <p>ကတ်ကြေး</p>
+            </div>
+        </div>
+        <div class="result">
+            <p>ကစားသမား ၁ ရွေးချယ်မှု: <span id="player1-choice">-</span></p>
+            <p>ကစားသမား ၂ ရွေးချယ်မှု: <span id="player2-choice">-</span></p>
+            <p id="result-text">ရလဒ်: ဂိမ်းစလိုက်!</p>
+        </div>
+        <button id="reset-game" style="display: none;">ဂိမ်းအသစ်စမယ်</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
